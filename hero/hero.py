@@ -8,13 +8,8 @@ def get_base64_image(image_path):
 
 def render_hero():
     image_names = [
-        "shop1.jpg", "shop2.jpg", "shop3.jpg",
-        "shop4.jpg", "shop5.jpg", "shop6.jpg",
-        "shop7.jpg", "shop8.jpg", "shop9.jpg",
-        "shop10.jpg", "shop11.jpg", "shop12.jpg",
-        "shop13.jpg", "shop14.jpg", "shop15.jpg",
-        "shop16.jpg", "shop17.jpg", "shop18.jpg",
-        "shop19.jpg", "shop20.jpg"
+        "shop2.jpg", "shop4.jpg", "shop5.jpg",
+        "shop6.jpg"
     ]
 
     image_html = ""
