@@ -21,7 +21,8 @@ def render_hero():
     for name in image_names:
         img_path = os.path.join("assets", name)
         img_data = get_base64_image(img_path)
-        image_html += f'<img src="data:image/jpg;base64,{img_data}" class="shop-img"/>'
+        image_html += f'<img src="data:image/jpg;base64,{img_data}" class="shop-img" loading="lazy"/>'
+
 
     st.markdown(f"""
     <div class="hero">
