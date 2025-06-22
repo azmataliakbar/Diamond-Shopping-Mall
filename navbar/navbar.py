@@ -12,17 +12,19 @@ def render_navbar():
     st.markdown(f"""
     <div class="navbar">
         <div class="logo-container">
-            <img src="data:image/png;base64,{logo_base64}" class="logo">
+            <a href="?page=Home" target="_self">
+                <img src="data:image/png;base64,{logo_base64}" class="logo">
+            </a>
         </div>
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Shops</a>
-            <a href="#">Jewelry</a>
-            <a href="#">Books</a>
-            <a href="#">Grocery</a>
-            <a href="#"> Food Court</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="?page=Home" target="_self">Home</a>
+            <a href="?page=Shops" target="_self">Shops</a>
+            <a href="?page=Jewelry" target="_self">Jewelry</a>
+            <a href="?page=Books" target="_self">Books</a>
+            <a href="?page=Grocery" target="_self">Grocery</a>
+            <a href="?page=Food Court" target="_self">Food Court</a>
+            <a href="?page=About" target="_self">About</a>
+            <a href="?page=Contact" target="_self">Contact</a>
         </div>
         <div class="contact-icon">
             <a href="tel:+923332236799">
@@ -31,3 +33,5 @@ def render_navbar():
         </div>
     </div>
     """, unsafe_allow_html=True)
+
+
